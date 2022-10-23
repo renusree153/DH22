@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
     <meta name="description" content="Our first page">
     <meta name="keywords" content="html tutorial template">
-    <link href = "/Users/renusree/Desktop/DubHacksVersion3/templates/index.css" rel = "stylesheet" >
-    <script src = "script.js" defer></script>
-</head>
-<body>
+    
+    
+    
+    
+    </head>
+    <body>
     <ul class = "tabs">
         <l1 data-tab-target="#Home" class ="active tab">Home</l1>
         <l1 data-tab-target="#user-information" class ="tab">Diabetes Detector</l1>
@@ -40,86 +42,79 @@
             </p>
         </div>
         <div id="user-information" data-tab-content>  
+            <p>Enter 1.0 for Yes and 0.0 for No</p>
+            <p>Enter 1.0 for Male and 0.0 for Female</p>
             <form class = "sub-form" action='/predict' method = "POST">
             
                 <label className="label">Do you have high BP?</label>
                 <!--<input className="input-box" type="text" name="pass" value = 0.0 required /> -->
                 <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <input type="checkbox" name="check" id="GFG" value="0.0">No<br>
             
   
               
                 <label className="label">Do you have high cholestrol?</label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <input className="input-box" type="text" name="pass2" value = 0.0 required /> <br>
              
   
               
-                <label className="label">What is your BMI? (please enter as a decimal value)</label>
-                <input className="input-box" type="text" name="pass3" value=28.0 required /> <br> <br>
+                <label className="label">What is your BMI?</label>
+                <input className="input-box" type="text" name="pass3" value=28.0 required /> <br>
               
   
               
                 <label className="label">Do you smoke?</label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <input className="input-box" type="text" name="pass4" value=0.0 required /> <br>
               
   
             
                 <label className="label">Have you ever had a stroke?</label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <input className="input-box" type="text" name="pass5" value=0.0  required /> <br>
              
 
                 <label className="label">Have you ever had a heart attack?</label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <input className="input-box" type="text" name="pass6" value=0.0 required /> <br>
               
   
               
                 <label className="label">Do you eat fruits on a daily basis?</label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <input className="input-box" type="text" name="pass7" value=0.0 required /> <br>
               
   
              
                 <label className="label">Do you eat vegetables on a daily basis?</label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <input className="input-box" type="text" name="pass8" value=0.0 required /> <br>
               
   
            
-                <label className="label">Do you drink a lot of alcohol? (having more than 14 drinks per week for males and 
-                    more than 7 drinks per week for females
+                <label className="label">Do you drink a lot of alcohol? (having more than 14 driinks per week for males and 
+                    more thann 7 drinks per week for females
                 </label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <input className="input-box" type="text" name="pass9" value=0.0 required /> <br>
              
   
               
-                <label className="label">How would you scale your general health on a scale of 1-5? (1.0 = excellent and 5.0 = poor)</label>
-                <input className="input-box" type="text" name="pass10" value=1.0 required /> <br> <br>
+                <label className="label">How would you scale your general health on a scale of 1-5? (1 = excellent and 5 = poor)</label>
+                <input className="input-box" type="text" name="pass10" value=22.0 required /> <br>
               
   
               
-                <label className="label">How many days in the past 30 days have you been physically active (please enter as a decimal value)?</label>
-                <input className="input-box" type="text" name="pass11" value=0.0 required /> <br> <br>
+                <label className="label">How many days in the past 30 days have you been physically active</label>
+                <input className="input-box" type="text" name="pass11" value=0.0 required /> <br>
               
   
               
-                <label className="label">Do you have serious difficuty climbing up stairs?</label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Yes
-                <input type="checkbox" name="check" id="GFG" value="0.0">No <br> <br>
+                <label className="label">Do you have serious difficuty climbing up stairs</label>
+                <input className="input-box" type="text" name="pass12" value=0.0 required /> <br>
               
   
               
-                <label className="label">What is your sex? </label>
-                <input type="checkbox" name="check" id="GFG" value="1.0">Male 
-                <input type="checkbox" name="check" id="GFG" value="0.0">Female <br> <br>
+                <label className="label">What is your sex</label>
+                <input className="input-box" type="text" name="pass13" value=0.0 required /> <br>
              
              
-                <label className="label">What is your Age?(please enter as a decimal value)</label>
-                <input className="input-box" type="text" name="pass14" required /> <br> <br>
+                <label className="label">What is your Age</label>
+                <input className="input-box" type="text" name="pass14" required /> <br>
              
   
               
@@ -129,5 +124,78 @@
             <h4>{{ prediction_text }}</h4>
         </div>
     </div>
-</body>
+    
+    <style>
+        body {
+            padding: 0;
+            background-color: white
+          }
+          
+          .label {
+            font-size: large;
+            display: flex;
+          }
+          
+          .sub-form {
+            max-width: 500px;
+            margin: 2rem auto;
+            border: 2px solid rosybrown;
+            padding: 2rem;
+          }
+          
+          label {
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+          
+          [data-tab-content] {
+            display: none;
+          }
+          
+          .active[data-tab-content] {
+            display: block;
+          }
+          
+          .tabs {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            font-size: xx-large;
+            border-bottom: 1px solid black;
+          }
+          
+          .tab {
+            cursor: pointer;
+          }
+          
+          .tab:hover {
+            background-color: #aaa;
+          }
+          
+          .tab.active {
+            background-color: #ccc;
+          }
+          
+          .num {
+              text-align: center;
+          }
+        </style>
+        <script >
+            const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
+        })
+    tabs.forEach(tab => {tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+    })
+})    
+        </script>
+    </body>
+
 </html>
