@@ -1,0 +1,53 @@
+body {
+  padding: 0;
+  background-color: white
+}
+
+.label {
+  font-size: large;
+  display: flex;
+}
+
+.sub-form {
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 2px solid rosybrown;
+  padding: 2rem;
+}
+
+label {
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: xx-large;
+  border-bottom: 1px solid black;
+}
+
+.tab {
+  cursor: pointer;
+}
+
+.tab:hover {
+  background-color: #aaa;
+}
+
+.tab.active {
+  background-color: #ccc;
+}
+
+.num {
+    text-align: center;
+}
