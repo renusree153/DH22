@@ -14,7 +14,6 @@ def home ():
   
 @app.route('/predict', methods =['POST'])
 def predict():
-    print("this is the shit")
     arr = []
     for x in request.form.values():
         print(x)
